@@ -7,18 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d3adc555b0.js" crossorigin="anonymous"></script>
     <title>Bleachigo</title>
 </head>
 <body>
     <header>
         <div class="container"><span class="symbol"><img src="resources/4beee86b14048bc16e77079ab556913f.svg" alt="logo" id="logo"/></span><span class="title">Bleachigo</span></div>
-        <nav>
-            <ul>
-                <li><a href="#menu">Menu</a></li>
-            </ul>
-        </nav>
     </header>
     <nav>
+        <button id="theme-toggle">Theme</button>
         <button class="toggle-menu">Menu</button>
         <div class="menu">
           <h2>Menu</h2>
@@ -33,104 +30,86 @@
         <h1 class="intro">This is Bleachigo, inspired with anime Bleach site</h1>
         <section>
             <div class="grid-container">
-                <article class="style">
+                <article class="style" data-link="character.html">
                     <span class="image">
                         <img src="/resources/8490f02ffdace4ea90bcbc443ffaede6.jpg" alt="IchigoMain" />
                     </span>
-                    <a href="character.html">
-                        <h2>Ichigo Kurosaki</h2>
+                        <h2 class="name">Ichigo Kurosaki</h2>
                         <div class="content">
                             <p>Ichigo Kurosaki (黒崎 一護, Kurosaki Ichigo) is a Human who is also a Substitute Shinigami. Ichigo is the son of Isshin and Masaki Kurosaki, and older brother of Karin and Yuzu. He is also married to Orihime Inoue and has a son named Kazui Kurosaki.</p>
                         </div>
-                    </a>
                 </article>
-                <article class="style">
+                <article class="style" data-link="character.html">
                     <span class="image">
                         <img src="/resources/d805817b85b1ccad6b454a37dfec2a67.jpg" alt="AizenMain" />
                     </span>
-                    <a href="character.html">
-                        <h2>Sōsuke Aizen</h2>
+                        <h2 class="name">Sōsuke Aizen</h2>
                         <div class="content">
                             <p>Sōsuke Aizen (藍染 惣右介, Aizen Sōsuke) is the former captain of the 5th Division in the Gotei 13. He later leaves Soul Society with his followers, Gin Ichimaru and Kaname Tōsen. His lieutenant was Momo Hinamori. He formerly served as the lieutenant of the 5th Division under Shinji Hirako. After waging war against Soul Society with an army of Arrancar, Aizen was defeated by Ichigo Kurosaki and sealed away by Kisuke Urahara, and then imprisoned for his crimes.</p>
                         </div>
-                    </a>
                 </article>
-                <article class="style">
+                <article class="style" data-link="character.html">
                     <span class="image">
                         <img src="/resources/71129b0999d33dc0816f52a10f4ec985.jpg" alt="UraharaMain" />
                     </span>
-                    <a href="character.html">
-                        <h2>Kisuke Urahara</h2>
+                        <h2 class="name">Kisuke Urahara</h2>
                         <div class="content">
                             <p>Kisuke Urahara (浦原 喜助, Urahara Kisuke) is the former captain of the 12th Division, as well as the founder and 1st President of the S.R.D.I.. His lieutenant was Hiyori Sarugaki. He lives in the Human World where he owns a small convenience store which sells Shinigami items. He is assisted by his employees Tessai Tsukabishi, Jinta Hanakari, and Ururu Tsumugiya.</p>
                         </div>
-                    </a>
                 </article>
-                <article class="style">
+                <article class="style" data-link="blade.html">
                     <span class="image">
                         <img src="/resources/f9c5e620e29ad5c85c3e79296676c822.jpg" alt="" />
                     </span>
-                    <a href="blade.html">
-                        <h2>Zangetsu</h2>
+                        <h2 class="name">Zangetsu</h2>
                         <div class="content">
                             <p>Shikai: After his Bankai's sword is broken, Ichigo discovers he does not possess a true Zanpakutō, but instead wields one formed from his inherited fusion of Shinigami/Hollow powers.</p>
                         </div>
-                    </a>
                 </article>
-                <article class="style">
+                <article class="style" data-link="blade.html">
                     <span class="image">
                         <img src="/resources/b727b1b58a889dc7d8e504f15d98f303.jpg" alt="" />
                     </span>
-                    <a href="blade.html">
-                        <h2>Kyōka Suigetsu</h2>
+                        <h2 class="name">Kyōka Suigetsu</h2>
                         <div class="content">
                             <p>Kyōka Suigetsu (鏡花水月, Mirror Flower, Water Moon): In its sealed form, it resembles a normal katana. The only decoration is the tsuba, which is a hexagon.</p>
                         </div>
-                    </a>
                 </article>
-                <article class="style">
+                <article class="style" data-link="blade.html">
                     <span class="image">
                         <img src="/resources/7e92c95bb26d052bd8e58af1c4744088.jpg" alt="" />
                     </span>
-                    <a href="blade.html">
-                        <h2>Benihime</h2>
+                        <h2 class="name">Benihime</h2>
                         <div class="content">
                             <p>Benihime (紅姫, Crimson Princess; Viz "Red Princess"): A blade described by Urahara as "not nice", it is one of the few known Zanpakutō with a female spirit owned by a male.</p>
                         </div>
-                    </a>
                 </article>
-                <article class="style">
+                <article class="style" data-link="blade.html">
                     <span class="image">
-                        <img src="/resources/e4d72bc0c657ed3a4eb0a6c2c5c2fcfd.jpg" alt="" />
+                        <img src="/resources/e4d72bc0c657ed3a4eb0a6c2c5c2fcfd.jpg"  alt="" />
                     </span>
-                    <a href="blade.html">
-                        <h2>Tensa Zangetsu</h2>
+                        <h2 class="name">Tensa Zangetsu</h2>
                         <div class="content">
                             <p>Tensa Zangetsu (天鎖斬月, Heaven Chain Slaying Moon): To activate his Bankai, Ichigo places the two blades of his Shikai side by side, causing a surge of energy to engulf him and the swords.</p>
                         </div>
-                    </a>
                 </article>
-                <article class="style">
+                <article class="style" data-link="blade.html">
                     <span class="image">
                         <img src="/resources/881a245ade0e3bd616539c93049487c0.jpg" alt="" />
                     </span>
-                    <a href="blade.html">
-                        <h2>Bankai</h2>
+                        <h2 class="name">Bankai</h2>
                         <div class="content">
                             <p>Not Revealed.</p>
                         </div>
-                    </a>
                 </article>
-                <article class="style">
+                <article class="style" data-link="blade.html">
                     <span class="image">
                         <img src="/resources/3464941393b2d330ed01e279daf69ef6.jpg" alt="" />
                     </span>
-                    <a href="blade.html">
-                        <h2>Kannonbiraki Benihime Aratame</h2>
+                        <h2 class="name">Kannonbiraki Benihime Aratame</h2>
                         <div class="content">
                             <p>Kannonbiraki Benihime Aratame (観音開紅姫改メ, Modification of the Crimson Princess' Dissection at the Doors of Avalokiteśvara; Viz "Opened Red Princess Neo"): Urahara's Bankai takes the form of a giant woman with dark, braided hair arranged in loops on her head and mannequin-like arms who wears a revealing red robe while Urahara himself retains his sealed sword for combat.</p>
                         </div>
-                    </a>
                 </article>
             </div>
         </section>
@@ -139,32 +118,33 @@
         <div class="inner">
             <section>
                 <h2>Get in touch</h2>
-                <form method="post" action="#">
+                <form id="contact-form">
                     <div class="fields">
                         <div class="field half">
-                            <input type="text" name="name" id="name" placeholder="Name" />
+                            <input type="text" name="name" id="name" placeholder="Name" required />
                         </div>
                         <div class="field half">
-                            <input type="email" name="email" id="email" placeholder="Email" />
+                            <input type="email" name="email" id="email" placeholder="Email" required />
                         </div>
                         <div class="field">
-                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                            <textarea name="message" id="message" placeholder="Message" required></textarea>
                         </div>
                     </div>
                     <ul class="actions">
                         <li><input type="submit" value="Send" class="primary" /></li>
                     </ul>
                 </form>
+                <div id="notification" class="hidden">Thank you for your message!</div>
             </section>
             <section>
                 <h2>Follow</h2>
-                <ul class="icons">
-                    <li><a rel="noopener" target="_blank" href="https://x.com/mtnlmptnss"><span class="label">X</span></a></li>
-                    <li><a rel="noopener" target="_blank" href="https://github.com/mtnlmptnss"><span class="label">GitHub</span></a></li>
-                    <li><a rel="noopener" target="_blank" href="https://t.me/mtn1mptnss"><span class="label">Telegram</span></a></li>
-                    <li><a rel="noopener"target="_blank" href="https://www.reddit.com/user/Mtnlmptnss/"><span class="label">Reddit</span></a></li>
-                    <li><a rel="noopener" target="_blank" href="https://github.com/mtnlmptnss"><span class="label">Discord</span></a></li>
-                    <li><a rel="noopener" target="_blank" href="www.youtube.com/@mtnlmptnss">Youtube</span></a></li>
+                <ul class="social-icons">
+                    <li><a rel="noopener" target="_blank" href="https://x.com/mtnlmptnss"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a rel="noopener" target="_blank" href="https://github.com/mtnlmptnss"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a rel="noopener" target="_blank" href="https://t.me/mtn1mptnss"><span class="label"><i class="fa-brands fa-telegram"></i></span></a></li>
+                    <li><a rel="noopener"target="_blank" href="https://www.reddit.com/user/Mtnlmptnss/"><i class="fa-brands fa-reddit-alien"></i></a></li>
+                    <li><a rel="noopener" target="_blank" href="https://github.com/mtnlmptnss"><i class="fa-brands fa-discord"></i></a></li>
+                    <li><a rel="noopener" target="_blank" href="https://www.youtube.com/@mtnlmptnss"><i class="fa-brands fa-youtube"></i></a></li>
                 </ul>
             </section>
            <p>&copy; 2024 mtnlmptnss</p>

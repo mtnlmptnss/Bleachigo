@@ -1,4 +1,50 @@
+:root {
+    --background-color: #ffffff; 
+    --text-color: #000000; 
+    --border-color: #cccccc; 
+}
+.dark-theme {
+    --background-color: #000000; 
+    --text-color: #ffffff; 
+    --border-color: #333333;
+}
+.dark-theme #logo {
+    filter: invert(100%) brightness(100%);
+
+}
+.dark-theme #theme-toggle,
+.dark-theme .toggle-menu {
+    background-color: white;
+    color: #000000;
+}
+.dark-theme h2,
+.dark-theme p,
+.dark-theme h1,
+.dark-theme .title {
+    background-color: black;
+    color: white;
+}
+.dark-theme .image,
+.dark-theme .image:hover,
+.dark-theme .container {
+    border: var(--border-color);
+}
+.dark-theme form {
+    background-color: white;
+}
+#theme-toggle {
+    position: fixed;
+    top:10px;
+    right: 70px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
 body {
+    background-color: var(--background-color);
     font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -34,7 +80,7 @@ nav ul li a {
     text-align: center;
     gap:50px;
     font-size: 50px;
-    color: white;
+    color: var(--background-color);
     text-decoration: none;
 }
 
@@ -42,7 +88,7 @@ nav ul li a {
     position: fixed;
     top: 10px;
     right: 10px;
-    background-color: #333;
+    background-color: black;
     color: white;
     border: none;
     padding: 10px;
@@ -57,7 +103,7 @@ nav ul li a {
     width: 300px;
     height: 100%;
     background-color: rgba(51, 51, 51, 0.95); 
-    color: white;
+    color: var(--background-color);
     padding: 20px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     transition: right 0.3s;
@@ -88,7 +134,7 @@ nav ul li a {
 }
 
 .menu ul li a {
-    color: white;
+    color: var(--background-color);
     text-decoration: none;
     display: block; 
 }
@@ -99,16 +145,16 @@ nav ul li a {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px; /* Расстояние между элементами */
+    gap: 100px;
     padding: 20px;
 }
 
 .style {
     position: relative;
-    overflow: hidden; /* Обрезать содержимое, выходящее за границы */
+    overflow: hidden; 
     width: 100%;
     height: 0;
-    padding-bottom: 100%; /* Квадратный контейнер */
+    padding-bottom: 100%; 
 }
 
 .image {
@@ -118,14 +164,14 @@ nav ul li a {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    border: 5px solid #333; /* Увеличение границы */
+    border: 5px solid #333; 
     transition: border 0.3s ease;
 }
 
 .image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Масштабировать и обрезать изображение */
+    object-fit: cover; 
     transition: transform 0.3s ease;
 }
 
@@ -136,13 +182,15 @@ nav ul li a {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+    color: var(--background-color);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-    pointer-events: none; /* Чтобы текст не мешал наведению на изображение */
+    pointer-events: none; 
+    z-index: 1; 
 }
 
 .style:hover .content {
@@ -154,5 +202,96 @@ nav ul li a {
 }
 
 .image:hover {
-    border: 5px solid transparent; /* Убираем границу при наведении */
+    border: 5px solid transparent; 
+}
+.name {
+    position: relative;
+    z-index: 2; 
+    margin: 0; 
+    padding: 10px; 
+    background: rgba(0, 0, 0, 0.5); 
+    color: var(--background-color); 
+    text-align: center;
+}
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+.social-icons li {
+    display: inline;
+}
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+}
+.social-icons a:hover {
+    color: blue; 
+}
+form {
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.field {
+    width: 100%;
+}
+
+.field.half {
+    width: calc(50% - 5px);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.actions {
+    list-style: none;
+    padding: 0;
+}
+
+.actions li {
+    margin-top: 10px;
+}
+
+.primary {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.primary:hover {
+    background: #0056b3;
+}
+
+#notification {
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#notification.show {
+    display: block;
 }
