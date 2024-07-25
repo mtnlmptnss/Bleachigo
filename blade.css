@@ -35,6 +35,9 @@
 .dark-theme form {
   background-color: white;
 }
+/* theme change settings */
+
+
 #theme-toggle {
   position: fixed;
   top:10px;
@@ -86,6 +89,9 @@ nav ul li a {
   color: var(--background-color);
   text-decoration: none;
 }
+/* Main settings of the page */
+
+
 
 .toggle-menu {
   position: fixed;
@@ -141,6 +147,10 @@ nav ul li a {
   text-decoration: none;
   display: block; 
 }
+/* Menu settigs  */
+
+
+
 .intro {
   text-align: center;
   font-size: 100px;
@@ -216,6 +226,9 @@ nav ul li a {
   color: var(--background-color); 
   text-align: center;
 }
+/* Articles  settings with ani and other features */
+
+
 .social-icons {
   list-style: none;
   padding: 0;
@@ -233,6 +246,9 @@ nav ul li a {
 .social-icons a:hover {
   color: blue; 
 }
+/* Social icons settings */
+
+
 form {
   background: black;
   padding: 20px;
@@ -298,6 +314,10 @@ input, textarea {
 #notification.show {
   display: block;
 }
+/* User form feature */
+
+
+
 section {
   display: flex;
   justify-content: space-between;
@@ -323,3 +343,4 @@ section {
   height: auto;
   border: 3px solid black;
 }
+/* Main element settings for text img etc */
